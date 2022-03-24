@@ -1,0 +1,320 @@
+@import "mixins";
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  REGISTER */
+.login {
+  background-size: cover;
+  background-color: $gray-lighten-more;
+  background-position: center center;
+
+  &--fullscreen {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &__block {
+    padding: rem(80) rem(40) rem(80);
+    margin-bottom: rem(70);
+    width: 100%;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: $md-max-width) {
+      padding: rem(40) rem(20) rem(80);
+      margin-bottom: 0;
+    }
+
+    &__inner {
+      min-width: rem(300);
+      max-width: rem(650);
+      margin: 0 auto;
+      padding: rem(50) rem(40) rem(20);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: $white;
+      position: relative;
+      @media (max-width: $md-max-width) {
+        max-width: rem(650);
+      }
+      @media (max-width: $sm-max-width) {
+        padding: rem(50) rem(25) rem(20);
+        .btn-google {
+          margin-left: 0 !important;
+        }
+      }
+    }
+
+    &__form {
+      position: relative;
+      z-index: 2;
+    }
+
+    &__promo {
+      padding: 0 0 rem(60);
+      max-width: rem(800);
+      font-size: rem(16);
+      line-height: rem(26);
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__sidebar {
+      display: none;
+    }
+
+    .input-phone {
+      .form-control {
+        width: 100% !important;
+      }
+    }
+
+    @media (min-width: $md-min-width) {
+      &--extended {
+        .login__block__inner {
+          max-width: rem(800);
+          padding: rem(80) rem(80) rem(50);
+        }
+
+        .login__block__form {
+          margin-right: rem(300);
+        }
+
+        .login__block__sidebar {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: rem(300);
+          padding: rem(80) rem(40);
+          color: $white;
+          background: $black-lighten;
+
+          &__item {
+            padding-left: rem(20);
+            border-left: 2px solid $text;
+            margin-bottom: rem(20);
+            color: $text;
+          }
+
+          &__title {
+            margin-bottom: rem(20);
+            line-height: 1.5;
+          }
+
+          &__place {
+            font-size: rem(14);
+            font-weight: bold;
+            position: absolute;
+            z-index: 2;
+            bottom: rem(40);
+            left: rem(40);
+          }
+        }
+      }
+    }
+  }
+
+
+  &__header {
+    align-self: flex-start;
+    width: 100%;
+    color: $white;
+    padding: rem(40);
+
+    @media (max-width: $md-max-width) {
+      padding: rem(15);
+    }
+
+    &__logo {
+      img {
+        max-width: rem(150);
+        max-height: rem(50);
+      }
+    }
+
+    &__menu {
+      text-align: right;
+      margin-top: rem(10);
+
+      @media (max-width: $md-max-width) {
+        text-align: left;
+      }
+
+      ul {
+        font-size: rem(16);
+
+        li {
+          margin-right: rem(20);
+          text-transform: uppercase;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.active {
+            a {
+              border-bottom: 1px solid rgba($white, .5);
+            }
+          }
+
+          a {
+            color: $white !important;
+            line-height: 1.4;
+            display: inline-block;
+            margin-right: rem(10);
+            font-weight: bold;
+
+            &:hover {
+              border-bottom: 1px solid rgba($white, .5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    align-self: flex-end;
+    width: 100%;
+    color: white;
+    padding: rem(40);
+
+    @media (max-width: $md-max-width) {
+      padding: rem(15);
+    }
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        margin-right: rem(20);
+        text-transform: uppercase;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: $white;
+          opacity: .7;
+          line-height: 1.4;
+          display: inline-block;
+          margin-right: rem(10);
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-custom {
+  padding-top: 20px;
+}
+
+.hr-custom {
+  margin-top: 2.5rem!important;
+  margin-bottom: 1.5rem!important
+}
+
+.hr-custom1{
+  margin-top: 3.5rem!important;
+  margin-bottom: 3rem!important
+}
+
+.description-personal {
+  .border__input{
+    padding-left: 11px !important;
+    padding-top: 9px !important;
+    &:focus {
+      -webkit-box-shadow: unset;
+      box-shadow: unset;
+    }
+  }
+}
+
+.span-optional {
+  font-size: 14px;
+  color: #757575; 
+  opacity: 0.4;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #757575;
+}
+
+.upload-image {
+  float: right;
+  background: #FBFBFB;
+  .btn-upload {
+    width: 163px;
+  }
+}
+
+.dragger {
+  .ant-upload-drag {
+    height: 240px;
+  }
+  .dragger-color {
+    color: #AFACAC !important;
+    font-family: $base__font-family !important;
+    font-size: 14px !important;
+    i {
+      color: #AFACAC !important;
+    }
+  }
+}
+
+.info-submit {
+  display: inline-flex;
+  margin-bottom: 40px;
+  .btn-info-done {
+    //margin-right: 16px;
+    height: 45px !important;
+  }
+  .btn-info-back {
+    //margin-left: 16px;
+    height: 45px !important;
+    border: 1px solid #989898;
+    background: #F9F9F9;
+  }
+}
+
+// custom-step -- start
+
+@media (max-width: $xs-max-width) {
+  .ant-steps-horizontal.ant-steps-label-horizontal > .ant-steps-item > .ant-steps-item-tail:after{
+    height: 0px !important;
+  }
+  .custom-step-register{
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 80px !important;
+    .ant-steps-item{
+      padding: 10px !important;
+    .ant-steps-item-tail:after{
+      display: none !important;
+    }
+
+    }
+
+  }
+
+  .button-done {
+    margin-bottom: 20px !important;
+  }
+}
+
+
+
+//custom-step --end

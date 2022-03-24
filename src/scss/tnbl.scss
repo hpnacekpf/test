@@ -1,0 +1,268 @@
+@import './mixins';
+.sale-off {
+  position: absolute;
+  top: -6.1px;
+  right: 15px;
+  z-index: 999;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 43px;
+    background: #7b6800;
+    top: 5px;
+    right: -10px;
+    clip-path: polygon(0 0%, 50% 0, 25% 100%, 0% 100%);
+    border-bottom-right-radius: 8px;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: #fed80b;
+    font-size: 14px;
+    line-height: 1;
+    padding: 12px 5px 10px;
+    border-top-left-radius: 8px;
+    width: 50px;
+  }
+}
+
+.sale-off span:before,
+.sale-off span:after {
+  position: absolute;
+  content: '';
+}
+.sale-off span:before {
+  height: 6px;
+  width: 6px;
+  right: -6px;
+  top: 0;
+  background: #fed80b;
+}
+.sale-off span:after {
+  height: 6px;
+  width: 8px;
+  right: -8.5px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #7b6800;
+}
+
+.tnbl {
+  position: relative;
+}
+
+.tnbl-card {
+  position: absolute;
+  display: flex;
+  top: -25px;
+  left: -15px;
+  height: 30px;
+  background: #fed80b;
+}
+.tnbl-card:before,
+.tnbl-card:after {
+  content: '';
+  position: absolute;
+}
+.tnbl-card:before {
+  width: 7px;
+  height: 100%;
+  top: 0;
+  left: -6.5px;
+  padding: 0 0 7px;
+  background: inherit;
+  border-radius: 5px 0 0 0px;
+}
+.tnbl-card:after {
+  width: 6px;
+  height: 6px;
+  bottom: -6px;
+  left: -6.5px;
+  background: #868686;
+  border-radius: 5px 0 0 7px;
+}
+
+.tnbl-try-now {
+  color: #3a3a3a;
+  background: #fed80b;
+  height: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  white-space: nowrap;
+  @media (max-width: $xxl-max-width) {
+    font-size: 12px !important;
+  }
+  @media (max-width: $sm-max-width) {
+    font-size: 12px !important;
+  }
+}
+
+.tnbl-try-now:before {
+  content: '';
+  position: absolute;
+  right: -14px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #fed80b;
+  border-top: 31px solid transparent;
+}
+
+.tnbl-pay-later {
+  background: #514d6a;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  padding: 6px 10px 6px 20px;
+  white-space: nowrap;
+  @media (max-width: $xxl-max-width) {
+    font-size: 12px !important;
+  }
+  @media (max-width: $sm-max-width) {
+    font-size: 12px !important;
+  }
+}
+
+.pay-later-tag {
+  font-size: 12px;
+  white-space: nowrap;
+  span {
+    &:nth-child(1) {
+      width: 75px;
+      color: #fff;
+      background: #514d6a;
+      font-size: 11px;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      @media (max-width: $xxl-max-width) {
+        font-size: 9px !important;
+      }
+      @media (max-width: $sm-max-width) {
+        font-size: 12px !important;
+      }
+    }
+
+    &:nth-child(2) {
+      font-weight: bold;
+      margin-right: 5px;
+      text-decoration: line-through;
+    }
+
+    &:nth-child(3) {
+      color: #f5232d;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+.try-now-tag {
+  font-size: 12px;
+  white-space: nowrap;
+  span {
+    &:nth-child(1) {
+      width: 75px;
+      color: #514d6a;
+      background: #fed80b;
+      font-size: 11px;
+      border-radius: 5px;
+      margin: 0px 5px 5px 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 2px 10px;
+      @media (max-width: $xxl-max-width) {
+        font-size: 9px !important;
+      }
+      @media (max-width: $sm-max-width) {
+        font-size: 12px !important;
+      }
+    }
+
+    &:nth-child(2) {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  }
+}
+
+.tnbl-price {
+  color: #f5232d;
+}
+
+.tnbl-delivery {
+  padding: 0 20px;
+}
+
+.tnbl-empty {
+  height: 24px;
+}
+
+.tnbl-price__button {
+  color: $color-primary;
+}
+
+@media (min-width: $xxl-min-width) {
+  .flex-xxl-row {
+    flex-direction: row !important;
+  }
+}
+
+.tnbl-tag {
+  &__price {
+    font-size: 13px !important;
+    @media (min-width: $md-min-width) and (max-width: $xl-max-width) {
+      font-size: 12px !important;
+      .tnbl-price {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media (min-width: $xxl-min-width) {
+    margin-top: 5px !important;
+  }
+}
+
+// .tnbl-product-card {
+//   @media (min-width: $xl-min-width) and (max-width: $xxl-max-width) {
+//     margin-top: 0.5rem !important;
+//   }
+//   @media (min-width: $xxl-min-width) and (max-width: 1920px) {
+//     margin-top: 3rem !important;
+//   }
+//   @media (min-width: $md-min-width) and (max-width: 1024px) {
+//     margin-top: 1rem !important;
+//   }
+//   @media (min-width: $sm-min-width) and (max-width: $md-max-width) {
+//     margin-top: 3rem !important;
+//   }
+// }
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+// slick slide is the container of a single slide item. There is also a wrapper div before our custom component
+.slick-slide {
+  display: flex !important;
+  align-self: stretch;
+  height: unset;
+  > div {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+  }
+}

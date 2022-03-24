@@ -1,0 +1,103 @@
+@import "color";
+@import "../mixins";
+
+.user-product {
+  .name {
+    padding-left: 1rem;
+    a {
+      font-size: 14px;
+      color: $gray-dark-v1;
+    }
+  }
+}
+
+.text-product {
+  color: #74708d !important;
+}
+
+.text-price-product {
+  color: #383838;
+}
+
+// icon yeu thich (wish list)
+.icon-like-normal {
+  color: #cbc9d3 !important;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #9d99af !important;
+  }
+}
+.icon-liked {
+  color: #eb6060 !important;
+}
+
+
+.avatar-user-in-product {
+  border: 1px solid $color-primary;
+}
+
+//lend
+.crop-container {
+  width: 100%;
+  padding-top: calc(100% - 120px);
+  height: auto !important;
+}
+
+.btn-save-image-crop {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn-product {
+  width: 200px;
+  padding: 0;
+}
+
+.rating-custom {
+  &>img:nth-child(1) {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 570px) {
+  .crop-container {
+    width: 100%;
+    padding-top: 100% !important;
+    height: auto !important;
+  }
+  .btn-product {
+    width: auto;
+    padding: 2px 30px;
+  }
+}
+
+.modal-crop-image{
+  min-width: 500px;
+  //top: 25px;
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 30px 10px 0px 10px;
+    }
+    .ant-modal-header {
+      padding: 0;
+    }
+  }
+  @media (max-width: $xs-max-width) {
+    min-width: unset;
+    top: 0;
+    .ant-modal-content {
+      .ant-modal-body {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+      .ant-modal-footer {
+        padding-top: 12px !important;
+        height: 71px !important;
+      }
+    }
+  }
+  .ant-modal-body{
+    padding: 20px 10px !important;
+  }
+}

@@ -1,0 +1,278 @@
+.profile-user-main {
+  padding-top: 45px !important;
+  .ant-tabs-nav .ant-tabs-tab-active {
+    color: $color-primary-v1 !important;
+  }
+}
+
+
+.text-area-custom {
+  min-height: 72px !important;
+}
+
+.notify_phone{
+  i {
+    top: 0;
+    transform: translateX(-100%);
+  }
+}
+// Button
+.btn-submit {
+  background-color: $color-primary;
+  border: none;
+  text-transform: uppercase;
+  color: rgb(36, 35, 35);
+}
+.btn-submit:hover {
+  background-color: #cab10a;
+  color: rgb(51, 57, 82);
+}
+.btn-submit:focus {
+  background-color: $color-primary;
+  border: none;
+  text-transform: uppercase;
+  color: rgb(36, 35, 35);
+}
+.btn-cancel:hover {
+  border: 1px solid $color-primary;
+  color: #ecce06;
+}
+// Tab Ant design
+.ant-tabs-ink-bar {
+ background-color: $color-primary;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #383838;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: #383838;
+}
+//button edit profile
+.btn-edit-profile {
+  font-size: 0;
+  img {
+    transition: 0.2s all ease-in-out !important;
+  }
+}
+
+.btn-change-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  img {
+    transform: scale(1);
+    opacity: 1 !important;
+    transition: 0.2s all ease-in-out !important;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+    img {
+      transform: scale(1);
+      opacity: 1 !important;
+    }
+  }
+  @media (min-width: 769px) {
+    img {
+      transform: scale(0.7);
+      opacity: 0 !important;
+    }
+  }
+}
+
+.btn-change-banner {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 15px;
+  transform: scale(0.8);
+  transition: 0.3s all ease-in-out !important;
+  background-color: rgba(100, 100, 100, 0.6);
+  border-radius: 50%;
+  opacity: 1 !important;
+  @media (min-width: 769px) {
+    opacity: 0 !important;
+    transform: scale(0.7);
+    border-radius: 0;
+  }
+}
+.banner-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    .btn-change-banner {
+      background-color: rgba(100, 100, 100, 0.6);
+      border-radius: 50%;
+      transform: scale(1);
+      opacity: 1 !important;
+      img {
+        transform: scale(1);
+        opacity: 1 !important;
+      }
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+    }
+  }
+
+}
+
+
+.btn-edit-profile:hover {
+  span {
+    color: #cab10a;
+  }
+  border-color: $color-primary;
+}
+.btn-edit-profile:focus{
+  span {
+    color: #cab10a;
+  } 
+  border-color: $color-primary;
+}
+
+.footer-card-custom {
+  padding-bottom: 0px !important;
+
+  .footer-card-profile {
+    border-top: 1px solid #EBEBEB !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    .btn-footer-card {
+      padding-left: 70px;
+      padding-right: 70px;
+      // background: $main;
+      &:hover , &:hover span {
+        background: $main;
+        color: $white;
+      }
+    }
+    .btn-cancel {
+      margin-left: 15px;
+    }
+    .btn-done {
+      margin-right: 15px;
+    }
+  }
+}
+
+.profile-detail{
+  //.ant-form-item-label{
+  //  text-align: end;
+  //  padding-right: 30px;
+  //
+  //}
+
+}
+
+.verify_phone {
+  border-left: unset !important;
+  .notify_phone {
+    border-bottom: 1px solid #CACACA !important;
+    border-top: 1px solid #CACACA !important;
+  }
+
+  .btn-verify {
+    border-right: 1px solid #CACACA !important;
+    border-bottom: 1px solid #CACACA !important;
+    border-top: 1px solid #CACACA !important;
+    background: #f5f5f5 !important;
+  }
+}
+
+.phone-profile {
+  .react-tel-input .form-control {
+
+    width: 100%;
+    border-right: unset !important;
+    border-bottom-right-radius:0px !important;
+    border-top-right-radius: 0px !important;
+
+    &:focus{
+      box-shadow: unset !important;
+      border-right: unset !important;
+      border-bottom-right-radius:0px !important;
+      border-top-right-radius: 0px !important;
+    }
+  }
+  .verify_phone {
+    z-index: 100;
+  }
+  .flag-dropdown {
+    border-radius: unset !important;
+  }
+}
+
+.product-remove{
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+@media (max-width: $md-max-width) {
+  .product-card-profile {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+// IPX
+@media (max-width: 767px) {
+  .profile-detail{
+    .ant-form-item-label{
+      text-align: unset;
+    }
+
+    .info-submit {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .btn-info-back {
+        margin-left: 0px;
+      }
+      .btn-info-done {
+        margin-right: 0px;
+      }
+    }
+
+    @media (max-width: $sm-max-width) {
+      .submit-edit-profile {
+        flex-direction: column;
+        button:nth-child(1) {
+          order: 2;
+        }
+        button:nth-child(2) {
+          order: 1;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .product-card-profile {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: $sm-max-width) {
+  .submit-edit-profile {
+    flex-direction: column;
+    button:nth-child(1) {
+      order: 2;
+      width: 100% !important;
+    }
+    button:nth-child(2) {
+      order: 1;
+      margin-bottom: 15px;
+      width: 100% !important;
+    }
+  }
+}

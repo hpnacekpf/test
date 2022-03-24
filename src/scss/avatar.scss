@@ -1,0 +1,95 @@
+@import 'mixins';
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  AVATAR */
+.avatar {
+  width: rem(35);
+  height: rem(35);
+  background-color: $gray-lighten;
+  border-color: $gray-darken;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 500px;
+  color: $white;
+  img {
+    //width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &--20 {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  &--25 {
+    width: rem(25);
+    height: rem(25);
+  }
+
+  &--40 {
+    width: rem(40);
+    height: rem(40);
+  }
+
+  &--45 {
+    width: rem(45);
+    height: rem(45);
+  }
+
+  &--50 {
+    width: rem(50);
+    height: rem(50);
+  }
+
+  &--60 {
+    width: rem(60);
+    height: rem(60);
+  }
+
+  &--70 {
+    width: rem(70);
+    height: rem(70);
+  }
+
+  &--90 {
+    width: rem(90);
+    height: rem(90);
+  }
+  &--100 {
+    width: rem(100);
+    height: rem(100);
+  }
+  &--110 {
+    width: rem(110);
+    height: rem(110);
+  }
+  &--116 {
+    width: rem(116);
+    height: rem(116);
+  }
+  &--130 {
+    width: rem(130);
+    height: rem(130);
+  }
+
+  &--220 {
+    width: rem(220);
+    height: rem(220);
+  }
+
+  &--border {
+    border: 4px solid $gray;
+  }
+
+  &--square {
+    border-radius: 50% !important;
+  }
+}
+
+.avatar-whats-app {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto !important;
+}

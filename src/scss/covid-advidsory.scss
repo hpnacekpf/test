@@ -1,0 +1,84 @@
+.covid-advisory {
+  @media (min-width: $xl-min-width) {
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 125px;
+  }
+  line-height: 1.5;
+  .step-covid {
+    .ant-steps {
+      width: unset !important;
+    }
+    .ant-steps-item-icon {
+      padding: 23px;
+      position: relative;
+      .ant-steps-icon {
+        font-size: 1.9em !important;
+        font-weight: normal;
+        position: absolute;
+        top: 50% !important;
+        transform: translate(-50%,-50%);
+        left: 50% !important;
+        line-height: 100%;
+      }
+    }
+  }
+  @media (max-width: $xs-max-width) {
+    font-size: 16px;
+    .lendor-title {
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .step-1 {
+      .step-covid {
+        .description-covid {
+          display: none;
+        }
+        &::after {
+          content: 'Sanitize';
+          font-weight: bold;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    .step-covid {
+      justify-content: center;
+      margin-bottom: 30px;
+      .ant-steps {
+        .ant-steps-item-icon {
+          margin-top: 6px;
+          margin-right: 0px;
+        }
+      }
+      .ant-steps-item-icon {
+        padding: 20px;
+        .ant-steps-icon {
+          font-size: 1.4em !important;
+          height: 25px;
+        }
+      }
+    }
+
+    .title-footer {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .info-step {
+      order: 2;
+      padding: 0;
+    }
+    
+    .img-step {
+      text-align: center;
+      img {
+        width: 65%;
+        padding-bottom: 35px;
+      }
+    }
+  }
+}

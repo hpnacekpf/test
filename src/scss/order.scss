@@ -1,0 +1,35 @@
+@import './mixins';
+
+.extend-order {
+  &__modal {
+    width: 600px !important;
+  }
+
+  &__range-picker {
+    height: 310px;
+
+    @media (max-width: $xs-max-width) {
+      min-height: 615px;
+    }
+  }
+
+  &__input {
+    visibility: hidden;
+  }
+
+  &__dropdown {
+    width: 100%;
+
+    .ant-calendar-range {
+      margin: auto;
+    }
+  }
+}
+
+.proof-content {
+  @media (max-width: 1025px) {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}

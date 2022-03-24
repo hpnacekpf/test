@@ -1,0 +1,39 @@
+
+
+.cont-sitemap {
+	position: relative;
+	font-size: 20px;
+	a:link,
+	a:visited {
+	color: #0180AF;
+	text-decoration: underline;
+	}
+
+	a:hover {
+			color: #666;
+	}
+
+	#footer {
+			padding: 10px;
+			text-align: center;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	li {
+		margin: 0px;
+	}
+	li ul {
+		margin-left: 20px;
+	}
+}
+
+.lpage {
+	padding: 5px;
+}
+.last-page {
+	border: none;
+}

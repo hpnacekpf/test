@@ -1,0 +1,480 @@
+.logo__singpass {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  height: 30px;
+}
+
+.btn__cancel {
+  height: 67px;
+  width: 100%;
+  color: black;
+  background: #f2f2f2;
+}
+
+// verified
+.verified__img img {
+  width: 30%;
+  object-fit: contain;
+  padding: 14px;
+}
+
+.verified__icon {
+  margin-bottom: 7px;
+  font-size: 55px;
+  color: #46be8a;
+}
+
+.verified__imginfo {
+  width: 37%;
+  object-fit: contain;
+  margin-right: 45px;
+}
+
+.verified__btninfo {
+  height: 57px;
+  background: #f4333d;
+  color: white;
+  width: 32%;
+}
+
+// responsive
+
+@media (max-width: 991px) {
+  .btn__myinfo {
+    height: 48px;
+  }
+  .btn__cancel {
+    height: 48px;
+  }
+  .logo__singpass img {
+    width: 40%;
+  }
+
+  // verified
+
+  .verified__img img {
+    width: 50%;
+    padding: 0;
+  }
+  .verified__img {
+    margin-bottom: 15px;
+  }
+
+  // veri
+  .verified__imginfo {
+    width: 40%;
+  }
+  .btn-singpass {
+    width: 100% !important;
+  }
+
+  .img_style_singpass {
+    width: 37%;
+  }
+
+  .pop-up__img {
+    width: 40% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo__singpass img {
+    width: 30%;
+  }
+  .verified__img img {
+    width: 28%;
+    padding: 0;
+  }
+  .verified__icon {
+    margin-bottom: 21px;
+  }
+
+  .img-style img {
+    width: 23%;
+  }
+  .verified__imginfo {
+    width: 25%;
+  }
+  .img_style_singpass {
+    width: 20%;
+  }
+
+  .pop-up__img {
+    width: 33% !important;
+  }
+  .error__message-text-popup p {
+    font-size: 17px;
+  }
+}
+
+.verified-title-text {
+  font-weight: 500;
+}
+//Benefits
+.benefits {
+  &__head {
+    // font-size: 26px;
+    font-weight: bold;
+  }
+
+  &__verify {
+    width: 100%;
+    background-color: #fed80b;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 60px;
+
+    &:hover {
+      background: #fed80b !important;
+    }
+  }
+
+  &__skip {
+    width: 100%;
+    height: 3.92rem !important;
+    background-color: #d2d9e5;
+    font-weight: bold;
+    color: black;
+
+    &-popup {
+      background-color: #d2d9e5;
+      font-weight: bold;
+      color: black;
+
+      &:hover {
+        color: black;
+        background-color: #bfbfbf;
+        border: #bfbfbf;
+      }
+    }
+
+    &:hover {
+      color: black;
+      background-color: #bfbfbf;
+      border: #bfbfbf;
+    }
+  }
+
+  &__iconlock {
+    color: #fed80b;
+    margin-top: 3px;
+  }
+}
+
+.privacy {
+  color: #fed80b !important;
+}
+
+// End Benefit
+
+//PopUp Verification
+
+.pop-up {
+  &__img {
+    padding-top: 37px;
+    width: 23%;
+  }
+
+  &__principal {
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: left;
+
+    p {
+      color: #171711;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__retrieve {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+
+    &:hover {
+      background-color: red;
+      border: red;
+      color: white;
+    }
+  }
+}
+
+// End PopUp
+
+.singpass {
+  &-feature {
+    img {
+      height: 90px;
+    }
+
+    &__popup {
+      img {
+        max-width: 130px;
+        height: 60px;
+      }
+    }
+  }
+
+  &-btn-cancel:hover {
+    border: none;
+  }
+
+  &-btn-verify {
+    border: none;
+  }
+
+  &-img__profile {
+    width: 115px;
+    // margin-bottom: 18px;
+    @media (max-width: 400px) {
+      margin-top: 20px;
+    }
+  }
+
+  &-icon__verification {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    .icon-success,
+    .icon-error {
+      top: 0 !important;
+    }
+  }
+
+  &-error-message {
+    border: 1px solid #f14046;
+    background: #ffdbdb;
+    border-radius: 5px;
+  }
+
+  &-icon-error {
+    font-size: 23px;
+    color: #f14046;
+  }
+
+  &__profile {
+    border: 1px solid #e4e9f0;
+  }
+
+  &-color-description {
+    color: #767676;
+  }
+
+  &-color-verification {
+    color: #171717;
+  }
+
+  &-verification {
+    p {
+      color: #171717;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-verified {
+    &__icon {
+      max-width: 80px;
+    }
+  }
+
+  &-fail-modal {
+    @media (min-width: 768px) {
+      max-width: 590px;
+    }
+    .ant-modal-body {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.title-border {
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0;
+  @media (max-width: 576px) {
+    border-bottom: none;
+  }
+}
+
+.lendor-title {
+  &__border {
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
+  }
+}
+
+.verified-content-text {
+  border-bottom: 1.5px solid #dee2e6;
+  padding: 7px 0;
+
+  p {
+    margin: 0;
+    color: #383838;
+    font-weight: bold;
+  }
+}
+
+.verified {
+  &__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 97px;
+      height: 2px;
+      top: 37px;
+      background: #dee2e6;
+    }
+  }
+
+  &__content-info {
+    margin-top: 40px;
+  }
+}
+
+.popup__header {
+  padding-top: 20px;
+}
+
+.popup__header h3 {
+  color: #383838;
+}
+
+.h-48 {
+  height: 48px !important;
+}
+
+.h-30 {
+  height: 30px !important;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fed80b;
+  color: #fed80b;
+  box-shadow: 9999px 0 0 -5px #fed80b;
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fed80b;
+  color: #fed80b;
+}
+
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px #fed80b;
+  animation: dotPulseBefore 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px #fed80b;
+  animation: dotPulseAfter 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: 9984px 0 0 -5px #fed80b;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px #fed80b;
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px #fed80b;
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px #fed80b;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px #fed80b;
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px #fed80b;
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: 10014px 0 0 -5px #fed80b;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px #fed80b;
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px #fed80b;
+  }
+}
+.assessment__content-img {
+  max-width: 25%;
+  height: auto;
+}
+
+.identity-button {
+  color: rgba(0, 0, 0, 0.65) !important;
+  box-shadow: 0px 3px 6px !important;
+  min-height: 88px !important;
+  min-width: 330px;
+  height: auto;
+  white-space: normal;
+  :hover {
+    border-color: #fed80b !important;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 400px !important;
+  }
+
+  @media (min-width: 450px) {
+    min-width: 330px;
+  }
+}
+.ant-radio {
+  margin: auto;
+}
+.ant-radio-checked::after {
+  border: none;
+}
+
+.hide-error-singpass {
+  display: none !important;
+}

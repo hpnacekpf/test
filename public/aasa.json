@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "E2EMU848N4.sg.lendor.lendor",
+                "paths": [ "/profile/*", "/p/*"]
+            }
+        ]
+    }
+}

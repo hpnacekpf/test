@@ -1,0 +1,136 @@
+@import "../mixins";
+@import "color";
+
+.bg-color-footer {
+  background-color: $color-footer;
+}
+
+.text-color-footer {
+  color: $color-text-gray;
+}
+
+.footer-main {
+  padding-top: 0;
+
+  .footer {
+    //padding-top: 30px;
+    //border-radius: 10px !important;
+    &-menu {
+      display: flex;
+
+      &-item {
+        min-width: 15rem;
+        margin-right: 60px;
+
+        &-title {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 22px;
+          @media (min-width: $sm-min-width) {
+            font-size: 16px;
+          }
+          @media (min-width: $md-max-width) {
+            font-size: 22px;
+          }
+        }
+
+        &-link {
+          color: $color-text-hover !important;
+
+          a {
+            color: $color-text-hover;
+          }
+        }
+      }
+    }
+
+    &-divider {
+      max-width: 120rem;
+      height: 1px;
+      border-bottom: 1px solid #D2D9E6;
+      margin: auto;
+      padding: 0 2.3rem;
+    }
+
+    &-link {
+      max-width: 120rem;
+      margin: auto;
+      padding: 0 4rem;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+
+      &-store {
+        display: flex;
+        // margin-top: rem(20);
+
+        .app-store {
+          margin-right: rem(15);
+        }
+      }
+    }
+
+    .height-content-footer {
+      min-height: 25rem;
+      display: flex;
+      justify-content: space-between;
+      max-width: 120rem;
+      margin: 0px auto;
+      padding: 2.3rem 4rem;
+      @media (max-width: $md-max-width) {
+        padding-left: 0px;
+        padding-right: 0px;
+        div:last-child {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  .footer-link {
+    // img {
+    //   width: 50%;
+    // }
+    .btn-lendor-google-play, .btn-lendor-app-store {
+      max-height: 50px !important;
+    } 
+    @media ( max-width: $xs-max-width) {
+      .btn-lendor-google-play, .btn-lendor-app-store {
+        max-height: 40px !important;
+      } 
+      .btn-lendor-app {
+        justify-content: center !important;
+      }
+      .logo-footer {
+        text-align: center;
+        img {
+          width: 35%;
+        }
+      }
+    }
+    @media ( min-width: $sm-min-width){
+      .logo-footer {
+        text-align: right;
+        img {
+          width: 50%;
+        }
+      }
+    }
+    @media ( min-width: $md-min-width){
+      .logo-footer {
+        text-align: right;
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.ant-layout-footer {
+  .utils__content {
+    padding: 0px !important;
+    max-width: unset !important;
+
+  }
+}

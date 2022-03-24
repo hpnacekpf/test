@@ -1,0 +1,232 @@
+@import "../mixins";
+
+.extInput {
+  //height: 32px;
+  width: 180px !important;
+  line-height: 16px;
+  position: relative;
+  display: flex;
+  
+  input {
+      width: 70%;
+      // width: 149px !important;
+      background-color: $gray-lighten;
+    }
+  @media (max-width: $xl-max-width) {
+      // width: 149px !important;
+    }
+  @media screen and (max-width: 620px) {
+    width: 30px !important;
+    input {
+      width: 149px !important;
+      padding-left: 22px !important;
+    }
+    :global(.ant-input-prefix) {
+      left: 11px !important;
+      pointer-events: none;
+    }
+  }
+}
+
+
+
+
+.livesearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #F9F9F9;
+  z-index: 1074;
+  @include transition-slow;
+
+  .search-top {
+    background-color: #fff;
+    flex: 1;
+    position: relative;
+  }
+
+  .close {
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: rem(22);
+    color: $default;
+    position: absolute;
+    top: rem(25);
+    right: rem(40);
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    @include transition-slow;
+  
+    &:hover {
+      color: $text;
+    }
+
+    @media screen and (max-width: $sm-min-width) {
+      top: 10px !important;
+      right: 10px !important;
+    }
+
+  }
+
+  .wrapper {
+    padding-top: rem(14);
+    padding-left: rem(65);
+    padding-right: rem(15);
+    line-height: 1.7;
+    
+    @media screen and (max-width: $sm-min-width) {
+      padding-left: rem(30);
+      padding-right: rem(30);
+    }
+  
+    @media screen and (max-width: $sm-min-width) {
+      padding-left: rem(0);
+      padding-right: rem(0);
+      .searchInput {
+        font-size: 20px!important;
+      }
+      
+    }
+    @media screen and (max-width: $sm-min-width) {
+     
+      .searchInput {
+        width: 50%;
+        font-size: 20px!important;
+        margin-top: 35px !important;
+      }
+    }
+
+    .logoContainer {
+      margin-top: rem(20);
+      @media screen and (max-width: $sm-min-width) {
+        margin-top: 10px !important;
+        display: flex;
+      }
+      .logo {
+        height: rem(78);
+        @media screen and (max-width: $sm-min-width) {
+          height: rem(50);
+        }
+      }
+      .rating {
+        height: rem(100);
+        @media screen and (max-width: $sm-min-width) {
+          height: rem(50);
+        }
+      }
+    }
+  
+    .searchInput {
+      width: 90% !important;
+      border: 2px solid grey;
+      font-size: rem(55);
+      background-color: transparent;
+      font-weight: bold;
+      padding: 0;
+      margin-bottom: rem(20);
+      margin-top: rem(20);
+      // 31px!important
+      @media screen and (max-width: $sm-min-width) {
+        font-size: rem(55);
+      }
+    }
+  
+    .options {
+      padding: 0;
+      margin: 0;
+      margin-bottom: rem(30);
+      list-style: none;
+  
+      .option {
+        display: inline-block;
+        margin-right: rem(26);
+        font-size: rem(13);
+        color: $text;
+      
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+}
+
+.livesearchVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+// mobile 
+@media screen and (max-width: 1023px) {
+  .search {
+    display: none !important;
+  }
+}
+
+// ipad pro 
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .search {
+    position: absolute;
+    right: -17rem;
+    height: 2.5rem !important;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-color: $color-yellow-v2;
+    animation: example 0.5s forwards;
+    @keyframes example {
+      from {
+        opacity: 0;
+        right: -15rem;
+      }
+      to {
+        opacity: 1;
+        right: -17rem;
+      }
+    }
+    @include transition-slow;
+    &:hover{
+      background-color: $color-yellow-v2;
+      border-color: $color-yellow-v2;
+    }
+  }
+}
+// desktop
+@media screen and (min-width: 1367px) {
+  .search{ 
+    position: absolute;
+    right: -4.5rem;
+    height: 2.5rem !important;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-color: $color-yellow-v2;
+    animation: example 0.5s forwards;
+    @keyframes example {
+      from {
+        opacity: 0;
+        right: -4.5rem;
+      }
+      to {
+        opacity: 1;
+        right: -5rem;
+      }
+    }
+    @include transition-slow;
+    &:hover{
+      background-color: $color-yellow-v2;
+      border-color: $color-yellow-v2;
+    }
+  }
+}
+
+

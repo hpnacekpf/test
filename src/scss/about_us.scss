@@ -1,0 +1,209 @@
+@import 'mixins';
+
+.page-about_us {
+  .banner {
+    background-image: url('../img/lendor-masthead.jpg');
+    height: calc(100vh - 67px);
+    width: 100%;
+    opacity: 0.4;
+  }
+}
+
+.grid {
+  &_item {
+    overflow: hidden;
+    &_text {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      animation-name: AboutUsHideOnboardTranstion;
+      animation-duration: 0.6s;
+      animation-fill-mode: backwards;
+      -webkit-animation-name: AboutUsHideOnboardTranstion;
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: backwards;
+
+      p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        color: #fff;
+        font-weight: 800;
+        word-break: break-word;
+        position: absolute;
+        opacity: 0;
+        transform: translate3d(5px, 0, 0);
+        -webkit-transform: translate3d(5px, 0, 0);
+        transition: opacity 0.8s, transform 0.8s;
+        -webkit-transition: opacity 0.8s, transform 0.8s;
+        -moz-transition: opacity 0.8s, transform 0.8s;
+        -o-transition: opacity 0.8s, transform 0.8s;
+      }
+    }
+    &_img {
+      width: 100%;
+      height: 100%;
+      transition: transform 2.95s cubic-bezier(0.2, 1, 0.3, 1);
+      -webkit-transition: transform 2.95s cubic-bezier(0.2, 1, 0.3, 1);
+      -moz-transition: transform 2.95s cubic-bezier(0.2, 1, 0.3, 1);
+      -o-transition: transform 2.95s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    &:hover,
+    &:active {
+      img {
+        animation-duration: 0.6s;
+        -webkit-animation-duration: 0.6s;
+        transform: scale3d(1.1, 1.1, 1.1);
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+      }
+      .grid_item_text {
+        opacity: 1;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        z-index: 101;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        p {
+          opacity: 1;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+        }
+        @media (max-width: $sm-min-width) {
+          font-size: rem(24);
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  &_title {
+    font-size: 50px;
+  }
+  &_item {
+    overflow: hidden;
+    height: 100%;
+    perspective: 1000px;
+
+    &:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    &_img {
+      width: auto;
+
+      @media (min-width: 1600px) {
+        height: 350px;
+      }
+      @media (max-width: 1599px) {
+        height: 305px;
+      }
+      @media (max-width: 1025px) {
+        height: 195px;
+      }
+      @media (max-width: 768px) {
+        height: 275px;
+      }
+      @media (max-width: 540px) {
+        height: 285px;
+      }
+      @media (max-width: 415px) {
+        height: 205px;
+      }
+      @media (max-width: 400px) {
+        height: 185px;
+      }
+      @media (max-width: 321px) {
+        height: 145px;
+      }
+      @media (max-width: 300px) {
+        height: 120px;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      height: 360px;
+    }
+    @media (max-width: 1599px) {
+      height: 330px;
+    }
+    @media (max-width: 1399px) {
+      height: 300px;
+    }
+    @media (max-width: 1025px) {
+      height: 220px;
+    }
+    @media (max-width: 768px) {
+      height: 285px;
+    }
+    @media (max-width: 540px) {
+      height: 295px;
+    }
+    @media (max-width: 415px) {
+      height: 215px;
+    }
+    @media (max-width: 400px) {
+      height: 195px;
+    }
+    @media (max-width: 321px) {
+      height: 155px;
+    }
+    @media (max-width: 300px) {
+      height: 130px;
+    }
+  }
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  right: 0;
+  left: 0;
+}
+
+.flip-box-front {
+  background-color: transparent;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+  background-color: transparent;
+}
+
+@-webkit-keyframes AboutUsHideOnboardTranstion {
+  0%,
+  to {
+    opacity: 0;
+  }
+}
+@keyframes AboutUsHideOnboardTranstion {
+  0%,
+  to {
+    opacity: 0;
+  }
+}

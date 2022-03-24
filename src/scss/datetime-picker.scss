@@ -1,0 +1,21 @@
+@import "mixins";
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  DATETIME PICKER */
+.DatepickerDemo {
+
+  .code-box-demo .ant-calendar-picker {
+    margin: 0 8px 12px 0;
+  }
+
+}
+
+.ant-calendar-picker-input {
+  &.ant-input {
+    border-radius: 0 !important;
+  }
+}
+
+.calendar-link-order {
+  color: #01a9b7;
+  text-decoration: underline;
+}

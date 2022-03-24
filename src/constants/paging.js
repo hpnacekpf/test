@@ -1,0 +1,21 @@
+export const MAX_TRENDING_CATEGORY_PRODUCT = 12
+
+export const MAX_PRODUCT_SAME_STORE = 16
+
+export const MAX_PRODUCT_SAME_CATEGORY = 16
+
+export const LIMIT_NOTIFICATION = 1
+
+export const DEFAULT_USER_PRODUCT = 12
+
+export const DEFAULT_PRODUCT_SAME_STORE = 12
+
+export const DEFAULT_PAGE_INDEX = 1
+
+export const DEFAULT_PAGE_SIZE = 12
+
+export const DEFAULT_ARTICLE_PAGE_SIZE = 5
+
+export const DEFAULT_WISH_LIST_PAGING = 12
+
+export const DEFAULT_MESSAGE_PAGING = 20

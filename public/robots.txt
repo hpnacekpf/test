@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+Sitemap: https://lendor.sg/sitemap.xml
+Sitemap: https://lendor.sg/sitemap.html
+Sitemap: https://lendor.sg/urllist.txt

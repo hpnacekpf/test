@@ -1,0 +1,87 @@
+---
+kind: pipeline
+type: docker
+name: build production
+
+clone:
+  depth: 50
+
+steps:
+  - name: docker
+    image: plugins/docker
+    environment:
+      ENV_FILE: '.env.production'
+    settings:
+      username:
+        from_secret: gitlab_username
+      password:
+        from_secret: gitlab_password
+      repo: registry.gitlab.com/lendor/lendor-ecommerce
+      registry: registry.gitlab.com
+      build_args_from_env:
+        - ENV_FILE
+      tags:
+        - "latest"
+  - name: deploy
+    image: meodemsao/drone-kubectl
+    settings:
+      kubernetes_server:
+        from_secret: k8s_server
+      kubernetes_cert:
+        from_secret: k8s_cert
+      kubernetes_token:
+        from_secret: k8s_token
+    commands:
+      - kubectl rollout restart deployment lendor -n lendor
+trigger:
+  branch:
+    - master
+  event:
+    include:
+      - push
+    exclude:
+      - pull_request
+
+---
+kind: pipeline
+type: docker
+name: build staging
+
+clone:
+  depth: 50
+
+steps:
+  - name: docker
+    image: plugins/docker
+    environment:
+      ENV_FILE: '.env.staging'
+    settings:
+      username:
+        from_secret: gitlab_username
+      password:
+        from_secret: gitlab_password
+      repo: registry.gitlab.com/lendor/lendor-ecommerce
+      registry: registry.gitlab.com
+      build_args_from_env:
+        - ENV_FILE
+      tags:
+        - "staging"
+  - name: deploy
+    image: meodemsao/drone-kubectl
+    settings:
+      kubernetes_server:
+        from_secret: k8s_server
+      kubernetes_cert:
+        from_secret: k8s_cert
+      kubernetes_token:
+        from_secret: k8s_token
+    commands:
+      - kubectl rollout restart deployment lendor-staging -n lendor
+trigger:
+  branch:
+    - staging
+  event:
+    include:
+      - push
+    exclude:
+      - pull_request

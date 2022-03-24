@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+  .setting-notifications {
+    padding: 80px;
+    .notifications {
+      .ant-form-item-control-wrapper {
+        text-align: right !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .setting-notifications {
+    .card-header {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    .card-body {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .setting-notifications {
+    .card-notifications {
+      padding-left: 20px !important;
+      padding-right: 70px !important;
+      .ant-form-item {
+        display: flex;
+        align-items: center;
+        .ant-form-item-label {
+          padding-bottom: 0px !important;
+        }
+      }
+    }
+  }
+}

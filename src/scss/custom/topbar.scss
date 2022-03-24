@@ -1,0 +1,21 @@
+.topbar {
+	background-color: #f9f9f9;
+	//display: flex;
+	justify-content: space-between;
+	position: relative;
+	border-bottom: 1px solid #e4e9f0;
+	padding: 0px;
+	//padding: 1px 0px;
+	min-height: 67px;
+	&__left {
+		margin-left: 20px;
+	}
+	&__right {
+		position: absolute;
+		right: 20px;
+	}
+}
+
+.searchbox-topbar {
+	width: fit-content;
+}

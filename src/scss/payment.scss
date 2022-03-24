@@ -1,0 +1,432 @@
+.shipping {
+    .ant-select-selection,
+    .ant-select-selection--single {
+        background: #E5E5E5;
+        height: 75px !important;
+        display: flex;
+        align-items: center;
+    }
+}
+.confirmation {
+    .box-remember-me {
+        padding-left: 20px;
+    }
+}
+
+.card-box-payment {
+    padding-left: 50px;
+    padding-right: 50px !important;
+    @media (max-width: $xs-max-width) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+.info-payment {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px !important;
+}
+
+.info-product {
+    img {
+        max-width: 100px;
+    }
+    p {
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+}
+
+.custom-payment-complete {
+	padding-bottom: 100px;
+	.btn-seetransaction {
+		right: 0;
+		top: 107%;
+		@media (max-width: $xs-max-width) {
+			width: 100% !important;
+			display: flex !important;
+			flex-direction: column;
+			.btn-large { 
+				width: 100%;
+			}
+			button:nth-child(1) {
+				order: 2 !important
+			}
+			button:nth-child(2) {
+				order: 1 !important
+			}
+		}
+	}
+	.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td, 
+	.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td, 
+	.ant-table-thead>tr:hover:not(.ant-table-expanded-row)>td, 
+	.ant-table-tbody>tr:hover:not(.ant-table-expanded-row)>td {
+			background: unset; //Change the existing color to `unset`
+	}
+}
+.ant-table-tbody > tr.ant-table-row-level-1:hover > td {
+    background: unset;
+  }
+// custom-payment --start --destop
+@media (min-width: 1337px) {
+    .view-shop {
+        padding: 25px;
+        margin: 35px 70px 70px 70px !important;
+        margin-bottom: 30px !important;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .hr-payment {
+        margin: 145px 70px 40px 70px !important;
+    }
+    .payment-receipe-title {
+        margin: 70px;
+    }
+    .btn-see{
+        border-radius: 5px !important;
+        margin-bottom: 30px !important;
+        margin-left: 40px !important;
+    }
+    .cart-complete{
+        padding: 50px;
+        margin: 70px !important;
+        margin-bottom: 30px !important;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .custom-table{
+        width: 100% !important;
+        // margin-left: 15px !important;
+        // margin-right: 15px !important;
+    }
+
+    .custom-text-right{
+        .lendor-title span{
+            font-weight: bold !important;
+        }
+    }
+
+    .custom-text-left{
+        line-height: 13px;
+        .lendor-title span{
+            font-weight: bold !important;
+        }
+    }
+
+    .qty{
+        width: 30px;
+        text-align: center;
+        padding-top: 5px;
+        background: white;
+    }
+    .text-content{
+        margin-left: 20px !important;
+    }
+    .custom-subtotal{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .custom-cardinfo{
+        width: 90% !important;
+        margin-left: 75px;
+        margin-bottom: 50px;
+        margin-top: 70px ;
+        .card-box-shadow {
+            box-shadow: 0 2px 8px rgba(0,0,0,.15);
+        }
+
+    }
+    .content-quantity{
+        margin-top: 30px !important;
+    }
+    .submit-payment{
+        margin-left: 75px !important;
+        margin-right: 75px !important;
+    }
+    .calendar-hp{
+        margin-top: 25px !important;
+    }
+    .ant-input-affix-wrapper .ant-input-suffix {
+        right: 22px;
+    }
+
+
+}
+
+// custom-payment --end --destop
+
+// custom-payment --start --ipad-pro
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .view-shop {
+        margin: 35px 70px 70px 70px !important;
+        margin-bottom: 30px !important;
+    }
+    .hr-payment {
+        margin: 145px 70px 40px 70px !important;
+    }
+    .payment-receipe-title {
+        margin: 70px;
+    }
+    .custom-table{
+        width: 100% !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    .btn-see{
+        border-radius: 5px !important;
+        margin-bottom: 30px !important;
+        margin-left: 650px !important;
+    }
+    .cart-complete{
+        margin: 70px !important;
+        margin-bottom: 30px !important;
+        border-radius: 10px;
+    }
+    .qty{
+        width: 30px;
+        text-align: center;
+        padding-top: 5px;
+        background: white;
+    }
+    .text-content{
+        margin-left: 20px !important;
+    }
+    .custom-subtotal{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .custom-cardinfo{
+        width: 90% !important;
+        margin-left: 45px;
+        margin-bottom: 50px;
+        margin-top: 70px;
+    }
+    .content-quantity{
+        margin-top: 30px !important;
+    }
+    .submit-payment{
+        margin-left: 75px !important;
+        margin-right: 75px !important;
+    }
+    .calendar-hp{
+        margin-top: 25px !important;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+
+        margin-left: 10px;
+    }
+    .step-payment {
+        margin-top: 28px;
+        margin-bottom: -17px;
+        max-width: 85%;
+    }
+    .ant-input-affix-wrapper .ant-input-suffix {
+        right: 184px;
+    }
+}
+// custom-payment --end --ipad-pro
+
+// custom-payment --start --ipad
+@media (min-width: 768px) and (max-width: 1023px) {
+    .view-shop {
+        margin: 35px 70px 70px 70px !important;
+    }
+    .hr-payment {
+        margin: 145px 70px 40px 70px !important;
+    }
+    .payment-receipe-title {
+        margin: 70px;
+    }
+    .btn-see{
+        border-radius: 5px !important;
+        margin-bottom: 30px !important;
+        margin-left: 450px !important;
+    }
+    .cart-complete{
+        margin: 70px !important;
+        margin-bottom: 10px !important;
+        border-radius: 10px;
+    }
+    .qty{
+        width: 30px;
+        text-align: center;
+        padding-top: 5px;
+        background: white;
+    }
+    .center-on-small-only{
+        margin-bottom: 10px;
+    }
+    .button-remove{
+        margin-bottom: 10px;
+    }
+    .submit-payment{
+        margin-top: 15px;
+    }
+    .card-border{
+        border-right: 0px !important;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+
+        margin-left: 10px;
+    }
+    .custom-cardinfo{
+        width: 90% !important;
+        margin-left: 45px;
+        margin-bottom: 50px;
+        margin-top: 70px ;
+    }
+    .step-payment {
+        margin-top: 28px;
+        margin-bottom: -17px;
+    }
+
+}
+// custom-payment --end --ipad
+
+// custom-payment --start --iphoneX
+@media (max-width: 767px) {
+    .view-shop {
+        margin: 35px 30px 70px 30px !important;
+    }
+    .hr-payment {
+        margin: 175px 30px 0px 30px !important;
+    }
+    .payment-receipe-title {
+        margin: 70px;
+    }
+    .btn-see{
+        border-radius: 5px !important;
+        margin-bottom: 30px !important;
+        margin-left: 80px !important;
+    }
+    .cart-complete{
+        margin: 30px !important;
+        margin-bottom: 30px !important;
+        border-radius: 10px;
+    }
+    .qty{
+        width: 30px;
+        text-align: center;
+        padding-top: 5px;
+        background: white;
+    }
+    .center-on-small-only{
+        margin-bottom: 10px;
+    }
+    .button-remove{
+        margin-bottom: 10px;
+    }
+    .submit-payment{
+        margin-top: 15px;
+    }
+    .submit-payment{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-border{
+        border-right: 0px !important;
+    }
+
+    .info-payment {
+        padding-top: 30px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .custom-cardinfo{
+        width: 90% !important;
+        margin-left: 16px;
+        margin-bottom: 20px;
+    }
+}
+// custom-payment --end --iphoneX
+@media (max-width: $xs-max-width) {
+    .payment-receipe-title {
+        margin: 30px;
+    }
+    .custom-cardinfo {
+        margin-top: 20px !important;
+    }
+    .submit-payment{
+        button:nth-child(1) {
+            order: 2;
+        }
+
+        button:nth-child(2) {
+            order: 1;
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+.modal-delivery {
+    .ant-modal-content {
+        @media (max-width: $xs-max-width) {
+            width: unset;
+            right: unset;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            right: 70px;
+            top: 0px;
+            .ant-modal-body {
+                .text-center {
+                    .ant-form-item-label {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            right: 108px;
+            top: 0px;
+            width: 700px;
+            .ant-modal-body {
+                .text-center {
+                    .ant-form-item-label {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            right: 100px;
+        }
+        right: 50px;
+        border-radius: 4px !important;
+        width: 600px;
+        padding: 28px 10px 5px 10px;
+        color: $color-primary-v1;
+        .ant-modal-title {
+            h4 {
+                font-size: 24px !important;
+            } 
+        }
+        .ant-modal-body {
+            padding-top: 0px;
+            padding-bottom: 8px;
+            .text-center {
+                .ant-form-item-label {
+                    width: 100%;
+                }
+                .ant-form-item {
+                    margin-bottom: 10px !important;
+                    .has-error {
+                        .ant-form-explain {
+                            float: left;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+            .ant-modal-footer {
+                button {
+                height: 45px;
+                }
+            }
+        }
+  }
+
+.remember-me {
+    padding-left: 20px;
+}

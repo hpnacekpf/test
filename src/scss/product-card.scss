@@ -1,0 +1,204 @@
+@import 'mixins';
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  PRODUCT-CARD */
+.productCard {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid $gray-light;
+  margin-bottom: 30px;
+  position: relative;
+  background: $white;
+  height: 95%;
+  &:hover {
+    .productCard__img .img-productCard {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+  &__status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: rem(25);
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-color: $danger transparent transparent $danger;
+    z-index: 10;
+
+    &__title {
+      position: relative;
+      top: rem(-19);
+      left: rem(-18);
+      display: inline-block;
+      transform: rotate(-45deg);
+      color: $white !important;
+      text-transform: uppercase;
+      font-size: rem(10);
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    a {
+      .img-productCard {
+        object-fit: contain !important;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        max-height: 100%;
+      }
+      img {
+        transition: transform 0.4s ease-in-out;
+      }
+      .label-protected {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: $white;
+        padding: 5px 10px;
+        background-color: rgba(56, 56, 56, 0.8);
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 16px;
+          float: left;
+          margin-right: 7px;
+        }
+      }
+
+      .label-remove-item {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        .anticon {
+          color: #f5222d;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(16);
+    padding-top: rem(15);
+    position: relative;
+
+    a {
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  &__descr {
+    padding-right: rem(100);
+    font-style: italic;
+    color: $black-lighten-more;
+
+    &__sizes {
+      font-style: normal;
+      margin: rem(15) 0 rem(10);
+
+      span {
+        display: inline-block;
+        margin-right: rem(5);
+        border: 1px solid $gray;
+        line-height: rem(14);
+        border-radius: rem(20);
+        padding: rem(3);
+        min-width: rem(30);
+        text-align: center;
+        margin-bottom: rem(5);
+      }
+    }
+  }
+
+  &__price {
+    font-size: rem(26);
+    position: absolute;
+    top: rem(10);
+    right: 0;
+    text-align: right;
+
+    &--old {
+      font-size: rem(16);
+      font-weight: normal;
+      text-decoration: line-through;
+      color: $text;
+    }
+  }
+
+  &__like {
+    position: absolute;
+    z-index: 100;
+    //right: rem(10);
+    right: rem(0);
+    cursor: pointer;
+    color: $black-lighten-more;
+
+    i {
+      transition: all 0.2s ease-in-out;
+      opacity: 0.2;
+      color: $text;
+    }
+
+    &:hover {
+      i {
+        opacity: 0.4;
+      }
+    }
+
+    &--selected {
+      i {
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  &__img-remove {
+    position: absolute;
+    z-index: 100;
+    top: rem(10);
+    right: rem(15);
+  }
+}
+
+@media (max-width: $sm-max-width) {
+  .submit-product {
+    flex-direction: column;
+    button:nth-child(1) {
+      order: 2;
+      width: 100% !important;
+    }
+    button:nth-child(2) {
+      order: 1;
+      margin-bottom: 15px !important;
+      width: 100% !important;
+    }
+  }
+}
+
+.favourite-icon {
+  width: 24px !important;
+}

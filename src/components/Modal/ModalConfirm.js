@@ -1,0 +1,82 @@
+import React from 'react'
+import classNames from 'classnames'
+import { connectModal } from 'redux-modal'
+
+import Modal from 'antd/lib/modal'
+import TitleModalOrder from '../Order/TitleModalOrder'
+import { CONFIRM_ORDER } from 'constants/index'
+import enumType from 'constants/enumType'
+
+const ModalConfirm = (props) => {
+  const {
+    show,
+    handleHide,
+    title,
+    content,
+    handleOkClick,
+    handleCancelClick,
+    okText,
+    cancelText,
+    className,
+    typeModal,
+    isShowButtonCancel,
+    okStyle
+  } = props
+  return (
+    <Modal
+      centered={true}
+      visible={show}
+      mask={false}
+      closable={false}
+      cancelText={cancelText ? cancelText : 'No'}
+      okText={okText ? okText : 'Yes'}
+      className={classNames(
+        'custom-modal custom-modal-sign-out modal-loan-request',
+        className
+      )}
+      autoFocusButton="cancel"
+      maskClosable={true}
+      cancelButtonProps={{
+        style: { order: 1, display: isShowButtonCancel ? 'none' : null },
+        className: `btn-color-grey font-weight-bold`
+      }}
+      okButtonProps={{
+        style: { order: 2, width: okStyle ? '100%' : null },
+        className: `btn-color-main font-weight-bold`
+      }}
+      title={
+        <h4 className="text-center title-modal font-roboto text-uppercase font-weight-bold">
+          {/* className='text-center title-modal font-roboto text-uppercase font-weight-bold'>
+          {title || `Confirm`} */}
+
+          <TitleModalOrder
+            titleName={title ? title : 'Confirm'}
+            icon={
+              typeModal && typeModal === enumType.typeModalOrder.CONFIRM
+                ? CONFIRM_ORDER
+                : null
+            }
+          />
+        </h4>
+      }
+      onCancel={() => {
+        if (handleCancelClick) {
+          handleCancelClick()
+        }
+        handleHide()
+      }}
+      onOk={() => {
+        if (handleOkClick) {
+          handleOkClick()
+        }
+        handleHide()
+      }}
+    >
+      <div className={'text-center font-size-14 font-cabin text-center mb-0'}>
+        {content}
+      </div>
+    </Modal>
+  )
+}
+
+export default connectModal({ name: 'modalConfirm' })(ModalConfirm)

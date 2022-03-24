@@ -1,0 +1,47 @@
+.smartbanner {
+  &-android {
+    background: #f2f2f2 !important;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2) !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2) !important;
+    text-shadow: none !important;
+    .smartbanner-button {
+      box-shadow: unset !important;
+      -webkit-box-shadow: unset !important;
+      line-height: 36px !important;
+      border: 0 !important;
+      .smartbanner-button-text {
+        border-radius: 38px !important;
+        padding: 0 20px !important;
+        color: $color-text-main !important;
+        background: $color-primary !important;
+      }
+    }
+    .smartbanner-close {
+      background: unset !important;
+      text-shadow: none !important;
+    }
+    .smartbanner-info {
+      text-shadow: none !important;
+    }
+    .smartbanner-title {
+      color: #4d4d4d !important;
+    }
+    .smartbanner-description {
+      color: #6a6a6a !important;
+    }
+  }
+  &-ios {
+    .smartbanner-button {
+      box-shadow: unset !important;
+      -webkit-box-shadow: unset !important;
+      line-height: 36px !important;
+      .smartbanner-button-text {
+        border-radius: 38px !important;
+        padding: 8px 20px !important;
+        border: 1px solid $color-primary !important;
+        background-color: $color-primary !important;
+        color: $color-text-main !important;
+      }
+    }
+  }
+}

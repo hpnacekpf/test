@@ -1,0 +1,282 @@
+@import 'mixins';
+
+.description-business {
+  @media (max-width: 576px) {
+    margin-top: 20px;
+    h1 {
+      font-size: 20px !important;
+    }
+
+    p {
+      font-size: 15px !important;
+    }
+  }
+
+  @media (max-width: $md-max-width) {
+    width: 80% !important;
+    // h1 {
+    //   font-size: 2rem !important;
+    // }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: $md-max-width) {
+    max-width: 60% !important;
+    h1 {
+      font-size: 40px !important;
+    }
+    p {
+      font-size: 2rem;
+    }
+    button {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.banner-business {
+  height: 65vh;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  position: relative;
+  @media (max-width: 576px) {
+    height: 100% !important;
+  }
+
+  @media (max-width: $md-max-width) {
+    height: 50vh;
+  }
+
+  &__header {
+    font-size: 3rem;
+  }
+
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 576px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.businessCard {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid $gray-light;
+  position: relative;
+  background: $white;
+  box-shadow: 10px 15px 20px #e6e6e6;
+}
+
+.business {
+  &-rent {
+    h1 {
+      font-size: 40px;
+      @media (max-width: 769px) {
+        font-size: rem(22);
+      }
+    }
+    p {
+      font-size: 2rem;
+      @media (max-width: 769px) {
+        font-size: 16px;
+      }
+    }
+
+    & .card-body {
+      padding: 3rem 2.3rem !important;
+    }
+  }
+
+  &-trend {
+    margin-bottom: 0 !important;
+
+    &__more {
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+
+  &-trend-title {
+    span {
+      font-size: 40px;
+      @media (max-width: 769px) {
+        font-size: 1.69rem !important;
+      }
+    }
+  }
+
+  &-frequently {
+    .ant-collapse {
+      font-size: 1.5rem !important;
+      @media (max-width: 576px) {
+        font-size: 16px !important;
+      }
+    }
+    .ant-collapse-content-box {
+      background-color: #fff !important;
+      padding-left: 0px !important;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+      padding-left: 0px !important;
+      font-weight: bold;
+
+      i {
+        color: #000 !important;
+      }
+    }
+    .ant-collapse-content {
+      border: 0px !important;
+      font-size: 1.3rem;
+    }
+
+    hr {
+      height: 1px;
+      margin-bottom: 0px;
+      background: $color-black-v3 !important;
+    }
+
+    .card-body {
+      padding: 0 2.3rem 1.92rem 2.3rem;
+    }
+  }
+}
+
+.card-header-business {
+  padding: rem(30) rem(40);
+
+  @media (max-width: 576px) {
+    padding: rem(30) rem(20);
+  }
+}
+
+.card-body-business {
+  flex: 1 1 auto;
+  padding: rem(20) rem(40);
+
+  @media (max-width: 576px) {
+    padding: rem(30) rem(20);
+  }
+}
+
+.custom-modal-business {
+  font-weight: bold;
+  .ant-modal-header {
+    padding: 32px 32px 0px !important;
+    .ant-modal-title {
+      padding-top: 0px !important;
+    }
+  }
+  .ant-modal-body {
+    padding: 16px 32px 32px !important;
+  }
+  @media (max-width: $xs-max-width) {
+    width: rem(400) !important;
+    .ant-modal-body {
+      padding: 16px 16px 32px !important;
+    }
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  @media (max-width: 769px) {
+    .ant-form-item-label {
+      padding: 0;
+    }
+    span {
+      color: #222222 !important;
+    }
+  }
+}
+
+.btn-color-red {
+  color: $color-text-white !important;
+  background-color: #ff443a !important;
+  border-color: #ff443a !important;
+}
+
+.btn-color-red:hover {
+  color: $color-text-white !important;
+  background-color: #cc423a !important;
+  border-color: #cc423a !important;
+}
+
+.business-area {
+  &--description {
+    font-size: 17px;
+    margin: 20px 0;
+    @media (min-width: 1366px) {
+      margin: 40px 0;
+      max-width: 400px;
+    }
+  }
+
+  &--image {
+    @media (min-width: 1366px) {
+      img {
+        max-width: 550px;
+        max-height: 410px;
+      }
+    }
+  }
+}
+
+.business-feature {
+  &--icon {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 25px;
+    @media (min-width: 768px) {
+      max-width: 110px;
+      max-height: 110px;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }
+}
+
+.business-partner {
+  &--logo {
+    @media (min-width: 768px) {
+      min-height: 150px;
+    }
+    @media (min-width: 920px) {
+      min-height: 180px;
+    }
+  }
+
+  &--quote {
+    color: #707070;
+  }
+}
+
+.business-faq {
+  border: none;
+
+  .ant-collapse-header {
+    padding: 10px 0 !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ant-collapse-content-box {
+    padding: 0;
+    background-color: transparent !important;
+  }
+  .ant-collapse-content {
+    border-top: none;
+  }
+
+  &--divide {
+    background: #222222;
+  }
+}

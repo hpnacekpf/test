@@ -1,0 +1,411 @@
+// -----------------color custom----------------------
+$color-red: #f14046;
+$color-red-v1: #f36065;
+$color-red-v2: #dd4b39;
+$color-red-v3: #f14046;
+$color-red-v4: #ff4d4f;
+
+//gray
+$color-gray: #ababab;
+$color-gray-v1: #b1b1b1;
+$color-gray-v2: #cccccc;
+$color-gray-v3: #585858;
+$color-gray-v4: #3a3a3a;
+$color-gray-v5: #afacac;
+$color-gray-v6: #757575;
+$color-gray-v7: #9e9e9e;
+$color-gray-v8: #aeaeae;
+$color-gray-v9: #5d5d5d;
+$color-gray-v10: #686868;
+$color-gray-v11: #dcdcdc;
+$color-gray-v12: #e6e6e6;
+$color-gray-v13: #e5e5e5;
+$color-gray-v14: #9a9a9a;
+$color-gray-v15: #a8a8a8;
+$color-gray-v16: #7b7b7b;
+$color-gray-v17: #989898;
+$color-gray-v18: #d6d6d6;
+$color-gray-v19: #bcbcbc;
+$color-gray-v20: #d9d8d8;
+$color-gray-v21: #c2c2c2;
+$color-gray-v22: #d5d5d5;
+
+//white
+$color-white-v1: #ebebeb;
+$color-white-v2: #d1d1d1;
+$color-white-v3: #d9d9d9;
+$color-white-v4: #dedede;
+$color-white-v5: #f9f9f9;
+$color-white-v6: #f2f2f2;
+$color-white-v7: #f3f2f2;
+$color-white-v8: #f2f4f8;
+$color-white-v9: #f6f6f6;
+$color-white-v10: #fbfbfb;
+$color-white-v11: #f1f1f1;
+$color-white-v12: #e4e9f0;
+$color-white-v13: #efefef;
+$color-white-v14: #eaeff9;
+$color-white-v15: #d8d8d8;
+$color-white-v16: #c4c4c4;
+$color-white-v17: #b9b9b9;
+$color-white-v18: #c5c5c5;
+$color-white-v19: #d4d4d4;
+$color-white-v20: #f5f5f5;
+$color-white-v21: #f8f9fa;
+
+//green
+$color-green-v1: #6cc697;
+$color-grenn-v2: #46be8a;
+
+//blue
+$color-blue-v1: #7fc4fd;
+$color-blue-v2: #3b5998;
+$color-blue-v3: #31cee2;
+$color-blue-v4: #319efb;
+$color-blue-v5: #009aaa;
+
+//yellow
+$color-yellow: #cab10a;
+$color-yellow-v1: #ffd90b;
+$color-yellow-v2: #f5d708;
+
+//black
+$color-black: #3e3e3e;
+$color-black-v1: #414141;
+$color-black-v2: #110e22;
+$color-black-v3: #000000;
+$color-black-v4: #000c17;
+
+//color gradient
+
+//--------------end color custom-------------------
+
+//color primary
+$color-primary: #fed80b;
+$color-primary-v1: #383838;
+$color-primary-hover: #ccb200;
+$color-primary-opacity-30: rgba(254, 216, 11, 0.3);
+$color-primary-opacity-60: rgba(254, 216, 11, 0.6);
+//color secondary
+$color-secondary: #f9f9f9;
+$color-footer: #eaeaea;
+$color-white: #fff;
+$color-gray-light: #f2f2f2;
+$color-gray-light-hover: #dcdcdc;
+$color-grey-light: rgba(242, 242, 242, 1);
+$color-grey-light-opacity-30: rgba(242, 242, 242, 0.3);
+$color-grey-light-v2: rgba(235, 235, 235, 1);
+$color-grey-light-v2-opacity-60: rgba(235, 235, 235, 0.6);
+$color-grey-light-v3: rgba(251, 251, 251, 1);
+$color-grey-light-v3-opacity-60: rgba(251, 251, 251, 0.6);
+
+//color text
+$color-text-main: rgba(22, 22, 22, 1);
+$color-text-main-opacity-30: rgba(22, 22, 22, 0.3);
+
+$color-text-black: #000000;
+$color-text-black-v1: #404040;
+$color-text-white: #ffffff;
+$color-text-gray: #707070;
+$color-text-gray-v1: #6f6f6f;
+$color-text-green: #638115;
+$color-text-green-v1: #46be8a;
+$color-text-blue: #2699fb;
+$color-text-orange: #ffa900;
+$color-text-primary: #383838;
+$color-text-primary-v1: #6f6f6f;
+$color-text-secondary: #989898;
+$color-text-tertiary: #f9f9f9;
+$color-text-hover: #383838;
+$color-text-title: #434242;
+$color-text-o06: rgba(56, 56, 56, 0.6);
+$color-text-o03: rgba(56, 56, 56, 0.3);
+$color-icon-006: rgba(111, 111, 111, 0.6);
+$color-icon-opacity-0_3: rgba(111, 111, 111, 0.3);
+$color-icon: rgba(111, 111, 111, 1);
+$color-icon-input-opacity-025: rgba(0, 0, 0, 0.25);
+
+$color-upload-image: #6f6f6f;
+//border color
+$border-color-primary: #fed80b;
+$border-color-secondary: #fed80b;
+$border-color-secondary-v1: #383838;
+$border-color-secondary-v2: #dcdcdc;
+$border-color-orange: #ffa900;
+$border-color-tertiary: #989898;
+$border-color-hover: #fed80b;
+$border-color-title: #ebebeb;
+$border-color-o06: rgba(254, 216, 11, 0.6);
+$border-color-red: #f14046;
+$border-color-red-v1: #cf0450;
+$border-color-red-v2: #ffccc7;
+$border-color-green: #46be8a;
+$border-color-applied: #d6d6d6;
+
+//background
+$background-color-primary: #fed80b;
+$background-color-primary-v1: #fffbe4;
+$background-color-secondary: #fff;
+$background-color-secondary-v1: #f2f4f8;
+$background-color-secondary-v2: #383838;
+$background-color-secondary-v3: #dcdcdc;
+$background-color-secondary-v4: #f2f2f2;
+$background-color-tertiary: #989898;
+$background-color-hover: #ccb200;
+$background-color-origin: #e5a44a;
+$background-color-green: #3d6b2b;
+$background-color-green-v1: #f4ffeb;
+$background-color-disabled: #b2b2b2;
+$background-color-applied: #d4d4d4;
+$background-color-red-v1: #ffdbdb;
+
+// calendar key
+$stock: #46be8a;
+$no-stock: #d52c40;
+$calendar-selected: #ffef9d;
+$date-available: #fcf3b2;
+$date-unavailable: #c3c3c3;
+$color-lendee-selected: #ffef9d;
+
+//red
+$background-color-danger: #f14046;
+$background-color-upload-image: #fafafa !important;
+//$background-color-danger-opacity-60:
+//lendor color
+$lendor-color: () !default;
+$lendor-color: map_merge(
+  (
+    primary: $color-primary,
+    primary-v1: $color-primary-v1,
+    green: $color-text-green,
+    blue: $color-text-blue,
+    gray: $color-text-gray,
+    gray-v1: $color-text-gray-v1,
+    gray-v3: $color-gray-v3,
+    main: $color-text-main
+  ),
+  $lendor-color
+);
+@each $color, $value in $lendor-color {
+  .lendor-color-#{$color} {
+    color: $value !important;
+  }
+}
+.text-color-primary {
+  color: $color-primary !important;
+}
+.text-color-primary--hover:hover {
+  color: $color-primary !important;
+}
+.text-color-primary-v1 {
+  color: $color-primary-v1 !important;
+}
+.text-color-primary-v2 {
+  color: $color-text-primary !important;
+}
+.text-color-black {
+  color: $color-text-black !important;
+}
+.text-color-black-v1 {
+  color: $color-text-black-v1 !important;
+}
+.text-color-white {
+  color: $color-text-white !important;
+}
+.text-color-green {
+  color: $color-text-green-v1 !important;
+}
+.text-color-o06 {
+  color: $color-text-o06 !important;
+}
+.text-color-red {
+  color: $color-red-v3 !important;
+}
+.text-color-orange {
+  color: $color-text-orange !important;
+}
+.border-color-primary {
+  border-color: $border-color-primary !important;
+}
+.border-color-o06 {
+  border-color: $border-color-o06 !important;
+}
+.border-color-secondary-v1 {
+  border-color: $border-color-secondary-v1 !important;
+}
+.border-color-secondary-v2 {
+  border-color: $border-color-secondary-v2 !important;
+}
+.border-color-red {
+  border-color: $border-color-red !important;
+}
+.border-color-orange {
+  border-color: $border-color-orange !important;
+}
+.border-color-green {
+  border-color: $border-color-green !important;
+}
+.text-slide {
+  color: $color-text-secondary !important;
+  &--hover:hover {
+    color: $color-primary !important;
+  }
+}
+.text-color-stock {
+  color: $stock !important;
+}
+.text-color-no-stock {
+  color: $no-stock !important;
+}
+.text-color-lendee-selected {
+  color: $color-lendee-selected !important;
+}
+.divider-color-1 {
+  background-color: #535353 !important;
+}
+.divider-color-2 {
+  background-color: #e4e4e4 !important;
+}
+.divider-color-3 {
+  background-color: #e0c207 !important;
+}
+@mixin btn-attributes($text, $border, $bg) {
+  background-color: $bg !important;
+  border: 1px solid $border !important;
+  color: $text !important;
+}
+.bg-input-lend-item {
+  background-color: $background-color-upload-image;
+}
+.bg-color-primary {
+  background-color: $color-primary !important;
+  &--hover:hover {
+    background-color: $color-primary !important;
+    color: $color-primary !important;
+    border: 1px solid $color-primary !important;
+  }
+}
+
+.bg-color-primary-v1 {
+  background-color: $background-color-primary-v1 !important;
+}
+.bg-color-secondary-v1 {
+  background-color: $background-color-secondary-v1 !important;
+}
+.bg-color-secondary-v2 {
+  background-color: $background-color-secondary-v2 !important;
+}
+.bg-color-secondary-v3 {
+  background-color: $background-color-secondary-v3 !important;
+}
+.bg-color-secondary-v4 {
+  background-color: $background-color-secondary-v4 !important;
+}
+.bg-color-gray {
+  background-color: $color-text-gray !important;
+}
+.bg-color-origin {
+  background-color: $background-color-primary !important;
+}
+.bg-color-green {
+  background-color: green !important;
+}
+.bg-color-green-v1 {
+  background-color: $background-color-green-v1 !important;
+}
+.bg-color-applied {
+  background-color: $background-color-applied !important;
+}
+.bg-color-white {
+  background-color: white !important;
+}
+.bg-color-yellow {
+  background-color: #fbd800 !important;
+}
+.bg-color-red-v1 {
+  background-color: $background-color-red-v1 !important;
+}
+.bg-color-white-v1 {
+  background-color: $color-white !important;
+}
+// lendor button primary
+.lendor-btn-primary {
+  @include btn-attributes(
+    $color-text-primary,
+    $border-color-primary,
+    $background-color-primary
+  );
+  &--hover:hover,
+  &--hover:active {
+    @include btn-attributes(
+      $color-text-hover,
+      $border-color-hover,
+      $background-color-hover
+    );
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+}
+.lendor-btn-secondary {
+  @include btn-attributes(
+    $color-text-secondary,
+    $border-color-secondary,
+    $background-color-secondary
+  );
+  &--hover:hover,
+  &--hover:active {
+    @include btn-attributes(
+      $color-text-hover,
+      $border-color-hover,
+      $background-color-hover
+    );
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+}
+.lendor-btn-tertiary {
+  @include btn-attributes(
+    $color-text-tertiary,
+    $border-color-tertiary,
+    $background-color-tertiary
+  );
+  &--hover:hover,
+  &--hover:active {
+    @include btn-attributes(
+      $color-text-hover,
+      $border-color-hover,
+      $background-color-hover
+    );
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+}
+.lendor-btn-gray {
+  @include btn-attributes(
+    $color-yellow-v2,
+    $border-color-secondary-v1,
+    $background-color-secondary-v2
+  );
+}
+.lendor-btn-disabled {
+  background-color: $background-color-disabled !important;
+}
+.text-color-main-opacity-0_3 {
+  color: $color-text-main-opacity-30 !important;
+}
+.lendor-btn-o06 {
+  border-color: $border-color-o06 !important;
+  color: $color-text-o06 !important;
+}
+.extInput > .ant-input::placeholder {
+  color: $color-text-gray-v1 !important;
+}
+.input-icon-opacity-0_25 {
+  color: $color-icon-input-opacity-025 !important;
+}
+.text-color-black-v3 {
+  color: $color-black-v3 !important;
+}

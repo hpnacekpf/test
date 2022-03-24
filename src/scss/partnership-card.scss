@@ -1,0 +1,26 @@
+@import './mixins';
+
+.partnership-card {
+  overflow: hidden;
+  max-height: 45rem !important;
+  &__desc {
+    height: 7rem;
+    overflow: hidden;
+  }
+
+  &__btn {
+    height: 3.4rem;
+  }
+}
+
+.partnership {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $sm-max-width) {
+  .partnership-card {
+    max-height: 54rem !important;
+  }
+}

@@ -1,0 +1,49 @@
+@import "mixins";
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  CAROUSEL */
+.carousel-custom {
+  .slick-list {
+    margin-left: rem(-12.5);
+    margin-right: rem(-12.5);
+
+    .slick-slide {
+      padding-left: rem(12.5);
+      padding-right: rem(12.5);
+    }
+  }
+
+
+  .slick-arrow {
+
+    &.slick-prev, &.slick-next {
+      font-size: 5em;
+      height: 50px;
+      width: 50px;
+      color: #efefef;
+      font-family: 'FontAwesome', sans-serif;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &.slick-prev {
+      left: - rem(70);
+
+      &:before {
+        content: "\f104";
+      }
+    }
+
+    &.slick-next {
+      right: - rem(90);
+
+      &:before {
+        content: "\f105";
+      }
+    }
+  }
+}
